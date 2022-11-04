@@ -14,13 +14,11 @@ public class BaseTest {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/achromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
         setWebDriver(new ChromeDriver(options));
         getWebDriver().get("https://www.codeshake.io/");
-
-
     }
 
     @After

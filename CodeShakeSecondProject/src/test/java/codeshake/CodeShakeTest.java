@@ -24,20 +24,16 @@ public class CodeShakeTest extends BaseTest {
     public void SecondProject() {
 
         title = codeShakePage.getTitle();
-
         Assert.assertEquals(title,"Codeshake | A Cloudwise Company | Istanbul");
 
-        codeShakePage.scrollToElement(MEET_OUR_PARTNER);
-        codeShakePage.click(VISIT_BUTTON);
+        codeShakePage.goToCloudWise();
 
         codeShakePage.switchToSecondTab();
 
         title = codeShakePage.getTitle();
         Assert.assertEquals(title,"Cloudwise helpt scholen met moderne ICT oplossingen | Cloudwise");
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
-
+        codeShakePage.goToAllCloudWisers();
 
         title = codeShakePage.getTitle();
         Assert.assertEquals(title,"Alle Cloudwisers - Cloudwise");
@@ -45,50 +41,42 @@ public class CodeShakeTest extends BaseTest {
         MANAGEMENT_NAMES = codeShakePage.getManagementPeople();
         listOfLists.add(MANAGEMENT_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         SUPPORT_NAMES = codeShakePage.getSupportPeople();
         listOfLists.add(SUPPORT_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         PROJECT_AND_SUPPORT_NAMES = codeShakePage.getProjectsandSupportPeople();
         listOfLists.add(PROJECT_AND_SUPPORT_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         SALES_NAMES = codeShakePage.getSalesPeople();
         listOfLists.add(SALES_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         MARKETING_NAMES = codeShakePage.getMarketingPeople();
         listOfLists.add(MARKETING_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         ACADEMY_NAMES = codeShakePage.getAcademyPeople();
         listOfLists.add(ACADEMY_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         DEVELOPMENT_NAMES = codeShakePage.getDevelopmentPeople();
         listOfLists.add(DEVELOPMENT_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         HR_AND_ADMINISTRATION_NAMES = codeShakePage.getHrandAdministrationPeople();
         listOfLists.add(HR_AND_ADMINISTRATION_NAMES);
 
-        codeShakePage.hoverElement(THIS_IS_CLOUDWISE);
-        codeShakePage.clickWithJs(ALL_CLOUDWISERS);
+        codeShakePage.goToAllCloudWisers();
 
         WAREHOUSE_NAMES = codeShakePage.getWareHousePeople();
         listOfLists.add(WAREHOUSE_NAMES);
